@@ -14,6 +14,8 @@
 		982560C11E3333280005C0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982560BF1E3333280005C0E4 /* Main.storyboard */; };
 		982560C31E3333280005C0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982560C21E3333280005C0E4 /* Assets.xcassets */; };
 		982560C61E3333280005C0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982560C41E3333280005C0E4 /* LaunchScreen.storyboard */; };
+		982560D11E33F7C10005C0E4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 982560D31E33F7C10005C0E4 /* bg.png */; };
+		982560D51E34061B0005C0E4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 982560D41E34061B0005C0E4 /* logo.png */; };
 		F3B87913ADBDB9FA740B10B5 /* libPods-deaddict.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D863BF2599724FFAD7EF3AB /* libPods-deaddict.a */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		982560C21E3333280005C0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		982560C51E3333280005C0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		982560C71E3333280005C0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		982560D21E33F7C10005C0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/bg.png; sourceTree = "<group>"; };
+		982560D41E34061B0005C0E4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +88,9 @@
 				982560BD1E3333280005C0E4 /* SecondViewController.m */,
 				982560BF1E3333280005C0E4 /* Main.storyboard */,
 				982560C21E3333280005C0E4 /* Assets.xcassets */,
+				982560D31E33F7C10005C0E4 /* bg.png */,
 				982560C41E3333280005C0E4 /* LaunchScreen.storyboard */,
+				982560D41E34061B0005C0E4 /* logo.png */,
 				982560C71E3333280005C0E4 /* Info.plist */,
 				982560B31E3333280005C0E4 /* Supporting Files */,
 			);
@@ -171,7 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				982560C61E3333280005C0E4 /* LaunchScreen.storyboard in Resources */,
+				982560D51E34061B0005C0E4 /* logo.png in Resources */,
 				982560C31E3333280005C0E4 /* Assets.xcassets in Resources */,
+				982560D11E33F7C10005C0E4 /* bg.png in Resources */,
 				982560C11E3333280005C0E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +264,15 @@
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
+		};
+		982560D31E33F7C10005C0E4 /* bg.png */ = {
+			isa = PBXVariantGroup;
+			children = (
+				982560D21E33F7C10005C0E4 /* Base */,
+			);
+			name = bg.png;
+			path = deaddict;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
@@ -393,6 +410,7 @@
 				982560CC1E3333280005C0E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

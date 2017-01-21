@@ -16,14 +16,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
+    WKWebViewConfiguration *theConfiguration = [[WKWebViewConfiguration alloc] init];
+    WKWebView *webView = [[WKWebView alloc] initWithFrame:self.view.frame configuration:theConfiguration];
+    webView.navigationDelegate = self;
+    NSURL *nsurl=[NSURL URLWithString:@"https://deaddict.herokuapp.com/"];
+    NSURLRequest *nsrequest=[NSURLRequest requestWithURL:nsurl];
+    [webView loadRequest:nsrequest];
+    [self.view addSubview:webView];
 
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end

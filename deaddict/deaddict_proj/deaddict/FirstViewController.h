@@ -13,7 +13,9 @@
 @property (nonatomic) PNCircleChart * circleChart;
 @property (weak, nonatomic) IBOutlet UIButton *increment;
 @property (strong, nonatomic) NSNumber *_current;
+@property (weak, nonatomic) IBOutlet UIImageView *tip_of_day;
 
+@property (weak, nonatomic) IBOutlet UILabel *tip_detail;
 
 @end
 
