@@ -1,0 +1,4 @@
+target 'deaddict' do
+    pod 'PNChart'
+end
+

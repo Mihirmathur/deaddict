@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		982560B51E3333280005C0E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 982560B41E3333280005C0E4 /* main.m */; };
+		982560B81E3333280005C0E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 982560B71E3333280005C0E4 /* AppDelegate.m */; };
+		982560BB1E3333280005C0E4 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982560BA1E3333280005C0E4 /* FirstViewController.m */; };
+		982560BE1E3333280005C0E4 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 982560BD1E3333280005C0E4 /* SecondViewController.m */; };
+		982560C11E3333280005C0E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982560BF1E3333280005C0E4 /* Main.storyboard */; };
+		982560C31E3333280005C0E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982560C21E3333280005C0E4 /* Assets.xcassets */; };
+		982560C61E3333280005C0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982560C41E3333280005C0E4 /* LaunchScreen.storyboard */; };
+		F3B87913ADBDB9FA740B10B5 /* libPods-deaddict.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D863BF2599724FFAD7EF3AB /* libPods-deaddict.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		231A3B310627EDE64AB8128D /* Pods-deaddict.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deaddict.release.xcconfig"; path = "Pods/Target Support Files/Pods-deaddict/Pods-deaddict.release.xcconfig"; sourceTree = "<group>"; };
+		47CDBB405171939034228327 /* Pods-deaddict.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deaddict.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deaddict/Pods-deaddict.debug.xcconfig"; sourceTree = "<group>"; };
+		5D863BF2599724FFAD7EF3AB /* libPods-deaddict.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-deaddict.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		982560B01E3333280005C0E4 /* deaddict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deaddict.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		982560B41E3333280005C0E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		982560B61E3333280005C0E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		982560B71E3333280005C0E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		982560B91E3333280005C0E4 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		982560BA1E3333280005C0E4 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		982560BC1E3333280005C0E4 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		982560BD1E3333280005C0E4 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		982560C01E3333280005C0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		982560C21E3333280005C0E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		982560C51E3333280005C0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		982560C71E3333280005C0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		982560AD1E3333280005C0E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B87913ADBDB9FA740B10B5 /* libPods-deaddict.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		761DBC726EA5AD5309455FAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D863BF2599724FFAD7EF3AB /* libPods-deaddict.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		982560A71E3333280005C0E4 = {
+			isa = PBXGroup;
+			children = (
+				982560B21E3333280005C0E4 /* deaddict */,
+				982560B11E3333280005C0E4 /* Products */,
+				FCDB7FBDABD4A58797062C9E /* Pods */,
+				761DBC726EA5AD5309455FAB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		982560B11E3333280005C0E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				982560B01E3333280005C0E4 /* deaddict.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		982560B21E3333280005C0E4 /* deaddict */ = {
+			isa = PBXGroup;
+			children = (
+				982560B61E3333280005C0E4 /* AppDelegate.h */,
+				982560B71E3333280005C0E4 /* AppDelegate.m */,
+				982560B91E3333280005C0E4 /* FirstViewController.h */,
+				982560BA1E3333280005C0E4 /* FirstViewController.m */,
+				982560BC1E3333280005C0E4 /* SecondViewController.h */,
+				982560BD1E3333280005C0E4 /* SecondViewController.m */,
+				982560BF1E3333280005C0E4 /* Main.storyboard */,
+				982560C21E3333280005C0E4 /* Assets.xcassets */,
+				982560C41E3333280005C0E4 /* LaunchScreen.storyboard */,
+				982560C71E3333280005C0E4 /* Info.plist */,
+				982560B31E3333280005C0E4 /* Supporting Files */,
+			);
+			path = deaddict;
+			sourceTree = "<group>";
+		};
+		982560B31E3333280005C0E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				982560B41E3333280005C0E4 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FCDB7FBDABD4A58797062C9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				47CDBB405171939034228327 /* Pods-deaddict.debug.xcconfig */,
+				231A3B310627EDE64AB8128D /* Pods-deaddict.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		982560AF1E3333280005C0E4 /* deaddict */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 982560CA1E3333280005C0E4 /* Build configuration list for PBXNativeTarget "deaddict" */;
+			buildPhases = (
+				70134FFBA9008948972F4625 /* [CP] Check Pods Manifest.lock */,
+				982560AC1E3333280005C0E4 /* Sources */,
+				982560AD1E3333280005C0E4 /* Frameworks */,
+				982560AE1E3333280005C0E4 /* Resources */,
+				7C3F45A2CA2E7C6EC03CC67F /* [CP] Embed Pods Frameworks */,
+				436E88A110401B0E4BBD9865 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = deaddict;
+			productName = deaddict;
+			productReference = 982560B01E3333280005C0E4 /* deaddict.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		982560A81E3333280005C0E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Shashank Khanna";
+				TargetAttributes = {
+					982560AF1E3333280005C0E4 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C672G6MTH4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 982560AB1E3333280005C0E4 /* Build configuration list for PBXProject "deaddict" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 982560A71E3333280005C0E4;
+			productRefGroup = 982560B11E3333280005C0E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				982560AF1E3333280005C0E4 /* deaddict */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		982560AE1E3333280005C0E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982560C61E3333280005C0E4 /* LaunchScreen.storyboard in Resources */,
+				982560C31E3333280005C0E4 /* Assets.xcassets in Resources */,
+				982560C11E3333280005C0E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		436E88A110401B0E4BBD9865 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deaddict/Pods-deaddict-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70134FFBA9008948972F4625 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7C3F45A2CA2E7C6EC03CC67F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-deaddict/Pods-deaddict-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		982560AC1E3333280005C0E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				982560BE1E3333280005C0E4 /* SecondViewController.m in Sources */,
+				982560B81E3333280005C0E4 /* AppDelegate.m in Sources */,
+				982560BB1E3333280005C0E4 /* FirstViewController.m in Sources */,
+				982560B51E3333280005C0E4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		982560BF1E3333280005C0E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				982560C01E3333280005C0E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		982560C41E3333280005C0E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				982560C51E3333280005C0E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		982560C81E3333280005C0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		982560C91E3333280005C0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		982560CB1E3333280005C0E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47CDBB405171939034228327 /* Pods-deaddict.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C672G6MTH4;
+				INFOPLIST_FILE = deaddict/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pennapps.deaddict;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		982560CC1E3333280005C0E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231A3B310627EDE64AB8128D /* Pods-deaddict.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = C672G6MTH4;
+				INFOPLIST_FILE = deaddict/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pennapps.deaddict;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		982560AB1E3333280005C0E4 /* Build configuration list for PBXProject "deaddict" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982560C81E3333280005C0E4 /* Debug */,
+				982560C91E3333280005C0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		982560CA1E3333280005C0E4 /* Build configuration list for PBXNativeTarget "deaddict" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982560CB1E3333280005C0E4 /* Debug */,
+				982560CC1E3333280005C0E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 982560A81E3333280005C0E4 /* Project object */;
+}
