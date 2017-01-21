@@ -1,8 +1,76 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	margin: 0 auto;
+	font-family: 'Pangram Regular';
+	font-style: normal;
+	letter-spacing: 2px;
 }
 
 a {
-  color: #00B7FF;
+	color: #00B7FF;
+}
+
+.nav{
+	width: 100vw;
+	height: auto;
+	border-bottom: 1px solid #989898;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: white;
+}
+
+
+.container{
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 30em;
+	width: 100%;
+	
+}
+
+
+
+
+#gradient{
+	background: rgba(47,146,182,1);
+	background: -moz-linear-gradient(top, rgba(47,146,182,1) 0%, rgba(0,34,97,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(47,146,182,1)), color-stop(100%, rgba(0,34,97,1)));
+	background: -webkit-linear-gradient(top, rgba(47,146,182,1) 0%, rgba(0,34,97,1) 100%);
+	background: -o-linear-gradient(top, rgba(47,146,182,1) 0%, rgba(0,34,97,1) 100%);
+	background: -ms-linear-gradient(top, rgba(47,146,182,1) 0%, rgba(0,34,97,1) 100%);
+	background: linear-gradient(to bottom, rgba(47,146,182,1) 0%, rgba(0,34,97,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2f92b6', endColorstr='#002261', GradientType=0 );
+}
+
+.logo{
+	height: 5em;
+	width: 5em;
+}
+
+.icon{
+	position: relative;
+	top: 1.5em;
+	height: 5em;
+	width: 5em;
+	padding: 0 2em 0em 2em;
+	opacity: .7;
+}
+.deaddict{
+	padding-top: 1em;
+	color: white;
+	font-size: 2em;
+	padding-bottom: 1em;
+}
+.prompts{
+	display: flex;
+	flex-direction: row;
+}
+@media(min-width: 768px) {
+
 }
