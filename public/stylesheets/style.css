@@ -1,30 +1,30 @@
 body {
-    margin: 0 auto;
-    font-family: 'Pangram Regular';
-    font-style: normal;
-    letter-spacing: 2px;
+	margin: 0 auto;
+	font-family: 'Pangram Regular';
+	font-style: normal;
+	letter-spacing: 2px;
 }
 
 a {
-    color: #00B7FF;
+	color: #00B7FF;
 }
 
 span {
-    font-size: .7em;
+	font-size: .7em;
 }
 
 .nav {
-    width: 100vw;
-    height: auto;
-    border-bottom: 1px solid #989898;
-    text-align: center;
-    align-items: center;
-    flex-direction: row;
-    width: 100%;
-    position: fixed;
-    background-color: white;
-    z-index: white;
-    z-index: 1000;
+	width: 100vw;
+	height: auto;
+	border-bottom: 1px solid #989898;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+	z-index: white;
+	z-index: 1000;
 }
 
 #particles{
@@ -35,103 +35,103 @@ span {
 }
 
 .container {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 30em;
-    width: 100%;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 30em;
+	width: 100%;
 }
 
 .contain {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    display: flex;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	display: flex;
+	width: 100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
 }
 
 .form {
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 10001;
-    pointer-events: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	z-index: 10001;
+	pointer-events: auto;
 }
 
 input {
-    width: 200px;
-    /*border: 1px solid black;*/
-    padding: 1em;
-    outline: none;
-    margin: 1em;
+	width: 200px;
+	/*border: 1px solid black;*/
+	padding: 1em;
+	outline: none;
+	margin: 1em;
 }
 
 .sub_but {
-    width: 100px;
-    height: auto;
-    background-color: #b6468a;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-family: 'Pangram Regular';
-    color: white;
-    padding: 1.1em 1em 1.1em 1em;
+	width: 100px;
+	height: auto;
+	background-color: #b6468a;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-family: 'Pangram Regular';
+	color: white;
+	padding: 1.1em 1em 1.1em 1em;
 }
 
 .sub_but2 {
-    width: 100px;
-    height: auto;
-    background-color: #b6468a;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    font-family: 'Pangram Regular';
-    color: white;
-    padding: 1.1em 1em 1.1em 1em;
+	width: 100px;
+	height: auto;
+	background-color: #b6468a;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-family: 'Pangram Regular';
+	color: white;
+	padding: 1.1em 1em 1.1em 1em;
 }
 
 .vivsvg {
-  
-    width: 100px;
-    height: 100px;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+	
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
 }
 
 *:focus {
-    outline: none;
+	outline: none;
 }
 
 .solution{
 	color: #5832A6;
 	padding-bottom: 1em;
-	    padding-left: 2em;
-    padding-right: 2em;
+	padding-left: 2em;
+	padding-right: 2em;
 }
 
 #gradient {
-    background: rgba(47, 146, 182, 1);
-    background: -moz-linear-gradient(top, rgba(47, 146, 182, 1) 0%, rgba(0, 34, 97, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(47, 146, 182, 1)), color-stop(100%, rgba(0, 34, 97, 1)));
-    background: -webkit-linear-gradient(top, rgba(47, 146, 182, 1) 0%, rgba(0, 34, 97, 1) 100%);
-    background: -o-linear-gradient(top, rgba(47, 146, 182, 1) 0%, rgba(0, 34, 97, 1) 100%);
-    background: -ms-linear-gradient(top, rgba(47, 146, 182, 1) 0%, rgba(0, 34, 97, 1) 100%);
-    background: linear-gradient(to bottom, rgba(47, 146, 182, 1) 0%, rgba(0, 34, 97, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2f92b6', endColorstr='#002261', GradientType=0);
+	background: rgba(49,35,174,1);
+	background: -moz-linear-gradient(top, rgba(49,35,174,1) 0%, rgba(137,62,148,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(49,35,174,1)), color-stop(100%, rgba(137,62,148,1)));
+	background: -webkit-linear-gradient(top, rgba(49,35,174,1) 0%, rgba(137,62,148,1) 100%);
+	background: -o-linear-gradient(top, rgba(49,35,174,1) 0%, rgba(137,62,148,1) 100%);
+	background: -ms-linear-gradient(top, rgba(49,35,174,1) 0%, rgba(137,62,148,1) 100%);
+	background: linear-gradient(to bottom, rgba(49,35,174,1) 0%, rgba(137,62,148,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3123ae', endColorstr='#893e94', GradientType=0 );
 }
 
 .logo {
-    padding-top: 1em;
-    height: 4.5em;
-    width: 4.5em;
-    z-index: 5;
+	padding-top: 1em;
+	height: 4.5em;
+	width: 4.5em;
+	z-index: 5;
 }
 
 .form-element{
@@ -139,31 +139,31 @@ input {
 }
 
 .ico_contain {
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    padding: 1em 5em 1em 5em;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	padding: 1em 5em 1em 5em;
 }
 
 .icon {
-    position: relative;
-    top: 1.5em;
-    height: 5em;
-    width: 5em;
-    padding: 0 1em 0em 1em;
-    opacity: .7;
+	position: relative;
+	top: 1.5em;
+	height: 5em;
+	width: 5em;
+	padding: 0 1em 0em 1em;
+	opacity: .7;
 }
 
 .deaddict {
-    padding-top: 1em;
-    color: white;
-    font-size: 2em;
-    padding-bottom: 1em;
+	padding-top: 1em;
+	color: white;
+	font-size: 2em;
+	padding-bottom: 1em;
 }
 
 .prompts {
-    display: flex;
-    flex-direction: row;
+	display: flex;
+	flex-direction: row;
 }
 
 .people{
@@ -189,20 +189,20 @@ input {
 }
 
 @media(max-width: 768px) {
-    .form-element {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
+	.form-element {
+		display: flex;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
 }
 
 @media(min-width: 768px) {
-    .contain {
-        flex-direction: row;
-    }
-    .icon{
-    	padding: 0 2em 0em 2em;
-    }
+	.contain {
+		flex-direction: row;
+	}
+	.icon{
+		padding: 0 2em 0em 2em;
+	}
 }
