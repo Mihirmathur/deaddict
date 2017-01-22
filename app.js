@@ -9,7 +9,7 @@ var routes = require('./routes/index');
 var users = require('./routes/users');
 
 var app = express();
-
+var firebase = require("firebase");
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
@@ -55,6 +55,43 @@ app.use(function(err, req, res, next) {
     error: {}
   });
 });
+
+
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+  } else {
+    // No user is signed in.
+  }
+});
+
+
+// var user = firebase.auth().currentUser;
+// var name, email, photoUrl, uid, emailVerified;
+
+// if (user != null) {
+//   name = user.displayName;
+//   email = user.email;
+//   photoUrl = user.photoURL;
+//   emailVerified = user.emailVerified;
+//   uid = user.uid;  // The user's ID, unique to the Firebase project. Do NOT use
+//                    // this value to authenticate with your backend server, if
+//                    // you have one. Use User.getToken() instead.
+// }
+
+
+//     .catch(function(error) {
+//   // Handle Errors here.
+//   var errorCode = error.code;
+//   var errorMessage = error.message;
+//   if (errorCode == 'auth/weak-password') {
+//     alert('The password is too weak.');
+//   } else {
+//     alert(errorMessage);
+//   }
+//   console.log(error);
+// });
+
 
 
 module.exports = app;

@@ -9,6 +9,11 @@
 	<meta name="format-detection" content="telephone=no">
 	<title>Deaddict.me</title>
 	<link rel='stylesheet' href='/stylesheets/style.css' />
+	<link rel='stylesheet' href='/stylesheets/animate.css' />
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
 </head>
 <body>
 	<style type="text/css">
@@ -28,17 +33,46 @@
 	</div>
 	<div class="container" id="gradient">
 		
-		<div class="deaddict"><b>deaddict.me</b></div>
+		<div class="deaddict animated fadeInDown"><b>deaddict.me</b></div>
 		<div class="prompts">
-			<img class="icon" src="/images/alcoholism.svg">
-			<img class="icon" src="/images/smoking.svg">
-			<img class="icon" src="/images/weed.svg">
+			<img class="icon animated fadeInLeft" src="/images/alcoholism.svg">
+			<img class="icon animated fadeInUp" src="/images/smoking.svg">
+			<img class="icon animated fadeInRight" src="/images/weed.svg">
 		</div>
 	</div>
 
-	<div class="container">
-		
+	<div class="form container">
+			<input id="name" name="person" type="text" placeholder="Name">
+			<input id="email" name="email" type="text" placeholder="Email">
+			<input id="pw" name="password" type="password" placeholder="Password">
+			<input id="cn" name="Customer Number" type="password" placeholder="CapitalOne ID">
+			<button class="sub_but">Deaddict Me</button>
 	</div>
+
+
+	<script type="text/javascript">
+		$('.sub_but').on("click", function(){
+			var NM = $('#name').val();
+			var ID = $('#email').val();
+			var PW = $('#pw').val();
+			var CN = $('#cn').val();
+			if(NM=='')return;
+			$.ajax({
+				type: "POST",
+				url: '/new',
+				data: {
+					"name": NM,
+					"email": ID,
+					"password": PW,
+					"customerNum": CN
+				}
+			});
+			$('.form').append("<br><span>Congrats! You've signed up to deaddict.</span>");
+
+
+		});
+	</script>
+
 
 	
 </body>

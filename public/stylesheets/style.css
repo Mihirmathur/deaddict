@@ -20,6 +20,7 @@ a {
 	position: fixed;
 	background-color: white;
 	z-index: white;
+	z-index: 1000;
 }
 
 
@@ -34,8 +35,29 @@ a {
 	
 }
 
+.form>input{
+	width: 200px;
+	/*border: 1px solid black;*/
+	padding: 1em;
+	outline: none;
+	margin: 1em;
+}
 
+.sub_but{
+	width: 100px;
+	height: auto;
+	background-color: #2F91B6;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	font-family: 'Pangram Regular';
+	color: white;
+	padding: 1.5em 1em 1.5em 1em;
+}
 
+*:focus {
+    outline: none;
+}
 
 #gradient{
 	background: rgba(47,146,182,1);
@@ -51,6 +73,7 @@ a {
 .logo{
 	height: 5em;
 	width: 5em;
+	z-index: 5;
 }
 
 .icon{
