@@ -14,18 +14,17 @@ var config = {
 firebase.initializeApp(config);
 
 
-function writeUserData(name, password, email) {
-	firebase.database().ref('users/' + name).set({
-		email: email,
-		password: password
-	});
-	console.log("Complete!")
-}
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
 	res.render('index', { title: 'Express' });
 });
+
+router.get('/admin', function(req, res, next) {
+	res.render('admin', { title: 'Express' });
+});
+
 
 router.post('/new',function(req,res){
 	console.log(req.body);
@@ -38,7 +37,9 @@ router.post('/new',function(req,res){
 	firebase.database().ref('users/' + name).set({
 		email: user_name,
 		password: password, 
-		customer_numer: customerNum
+		customer_number: customerNum,
+		streak: 0, 
+		zip: 10027
 	});
 	
 	console.log("Complete!")

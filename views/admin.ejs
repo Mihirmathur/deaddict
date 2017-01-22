@@ -34,35 +34,17 @@
 	</div>
 	<div class="container" id="gradient">
 		
-		<div class="deaddict animated fadeInDown"><b>de-addict.me</b></div>
-		<div class="prompts">
-			<img class="icon animated fadeInLeft" src="/images/alcoholism.svg">
-			<img class="icon animated fadeInUp" src="/images/smoking.svg">
-			<img class="icon animated fadeInRight" src="/images/weed.svg">
-		</div>
+		<div class="deaddict animated fadeInDown"><b>de-addict.me | admin portal</b></div>
+		
 	</div>
 
 	<div class="form">
 	<br>
-		<h3>We understand you, we care for you.</h3>
-		<!-- <p>And that's why we're bringing the best solution to de-addict</p> -->
-		<div class="contain">
-			<div class="ico_contain">
-				<div class="vivsvg"id="vivsvg"></div>
-				<span>Streak Rewards</span>
-			</div>
+		<h3>Search for a customer</h3>
+		<br>
 
-			<div class="ico_contain">
-				<div class="vivsvg" id="vivsvg1"></div>
-				<span>Health Tracking</span>
-			</div>
-
-			<div class="ico_contain">
-				<div class="vivsvg" id="vivsvg2"></div>
-				<span>Daily Tips</span>
-			</div>
-		</div>
-		<h5 class="solution">And we're bringing the best de-addiction solution to you...</h5>
+		<input id="capone_id" name="person" type="text" placeholder="CapitalOne Id"><button class="sub_but">Get Details</button>
+		<br><br><br><br><br><br>
 		<hr>
 		<div class="form-element">
 		<input id="name" name="person" type="text" placeholder="Name">
@@ -73,30 +55,17 @@
 		</div>
 	</div>
 
-	<script>
-		new Vivus('vivsvg', {duration: 600, file: "/images/money.svg"});
-		new Vivus('vivsvg1', {duration: 600, file: "/images/health.svg"});
-		new Vivus('vivsvg2', {duration: 600, file: "/images/tips.svg"});
-	</script>
+	
 
 	<script type="text/javascript">
 		$('.sub_but').on("click", function(){
-			var NM = $('#name').val();
-			var ID = $('#email').val();
-			var PW = $('#pw').val();
-			var CN = $('#cn').val();
+			var NM = $('#capone_id').val();
+			var api_url = "http://api.reimaginebanking.com/accounts/"+NM+"/withdrawals?key=0328041e3591473db2c6d492ba8aff2b";
 			if(NM=='')return;
-			$.ajax({
-				type: "POST",
-				url: '/new',
-				data: {
-					"name": NM,
-					"email": ID,
-					"password": PW,
-					"customerNum": CN
-				}
-			});
-			$('.form').append("<span>Congrats! You've signed up to deaddict.</span>");
+			$.get(api_url, function(data){
+				console.log(data);
+			})
+			
 
 		});
 	</script>
