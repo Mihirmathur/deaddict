@@ -156,8 +156,11 @@
 				$('.confirmed_addicts').append("<h3>Confirmed Addicts</h3>");
 				Object.keys(snapshot.val()).forEach(function(e){
 					console.log(e);
+					firebase.database().ref('/users/'+e).once('value').then(function(snapshot){
+						var zip = snapshot.val().zip;
+						$('.confirmed_addicts').append("<p>"+e+"<br>ZIP: "+zip+", NY</p>");
+					})
 					
-					$('.confirmed_addicts').append("<p>"+e+"</p>");
 				});
 			});
 
