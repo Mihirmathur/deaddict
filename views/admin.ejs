@@ -16,6 +16,7 @@
 	crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
 </head>
 <body>
 	<style type="text/css">
@@ -40,32 +41,68 @@
 	</div>
 
 	<div class="form">
-	<br>
+		<br>
 		<h3>Search for a customer</h3>
 		<br>
 
 		<input id="capone_id" name="person" type="text" placeholder="CapitalOne Id"><button class="sub_but">Get Details</button>
-		<br><br><br><br><br><br>
+		<br><br>
+
+		<div id="chart" style="width: 100%"><!-- Plotly chart will be drawn inside this DIV --></div>
 		<hr>
 		<div class="form-element">
-		<input id="name" name="person" type="text" placeholder="Name">
-		<input id="email" name="email" type="text" placeholder="Email">
-		<input id="pw" name="password" type="password" placeholder="Password">
-		<input id="cn" name="Customer Number" type="password" placeholder="CapitalOne ID">
-		<button class="sub_but">Deaddict Me</button>
+			<input id="name" name="person" type="text" placeholder="Name">
+			<input id="email" name="email" type="text" placeholder="Email">
+			<input id="pw" name="password" type="password" placeholder="Password">
+			<input id="cn" name="Customer Number" type="password" placeholder="CapitalOne ID">
+			<button class="sub_but">Deaddict Me</button>
 		</div>
 	</div>
 
 	
 
 	<script type="text/javascript">
+
+		var config = {
+			apiKey: "AIzaSyC6GK4lbZeM-MmtdGsLF3m5GLCWsTmOtBA",
+			authDomain: "deaddict-8321f.firebaseapp.com",
+			databaseURL: "https://deaddict-8321f.firebaseio.com",
+			storageBucket: "deaddict-8321f.appspot.com",
+			messagingSenderId: "585605368899"
+		};
+
+		firebase.initializeApp(config);
+
+
+
 		$('.sub_but').on("click", function(){
-			var NM = $('#capone_id').val();
-			var api_url = "http://api.reimaginebanking.com/accounts/"+NM+"/withdrawals?key=0328041e3591473db2c6d492ba8aff2b";
-			if(NM=='')return;
-			$.get(api_url, function(data){
-				console.log(data);
-			})
+			// var NM = $('#capone_id').val();
+			// var api_url = "http://api.reimaginebanking.com/accounts/"+NM+"/withdrawals?key=0328041e3591473db2c6d492ba8aff2b";
+			// if(NM=='')return;
+
+			// $.get(api_url, function(data){
+			// 	console.log(data);
+			// })
+			
+			var name = $('#capone_id').val();
+			var heartrate=[];
+			firebase.database().ref('/users/' + name).once('value').then(function(snapshot) {
+				heartrate = snapshot.val().heartrate;
+				console.log(heartrate);
+
+				var dataset=[{
+					// x:[1,2,3,4,5,6,7,8,9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20],
+					x:["1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00"],
+					y: heartrate,
+					type: 'scatter'
+				}];
+
+				console.log(dataset);
+
+				Plotly.plot('chart', dataset);
+
+			});
+
 			
 
 		});
