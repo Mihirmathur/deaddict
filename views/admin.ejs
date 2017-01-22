@@ -18,6 +18,7 @@
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
 	<script src="/javascripts/particles.min.js"></script>
+	<script src="https://d3js.org/d3.v4.min.js"></script>
 </head>
 <body>
 	<style type="text/css">
@@ -57,11 +58,30 @@
 		<div id="chart" style="width: 100%"><!-- Plotly chart will be drawn inside this DIV --></div>
 		<hr>
 		<div class="form-element">
-			<input id="name" name="person" type="text" placeholder="Name">
+			<!-- <input id="name" name="person" type="text" placeholder="Name">
 			<input id="email" name="email" type="text" placeholder="Email">
 			<input id="pw" name="password" type="password" placeholder="Password">
 			<input id="cn" name="Customer Number" type="password" placeholder="CapitalOne ID">
-			<button class="sub_but">Deaddict Me</button>
+			<button class="sub_but">Deaddict Me</button> -->
+
+			<br>
+			<h3>Get Analytics</h3>
+			<br>
+
+			<button class="sub_but2">Analytics</button>
+			<br><br>
+				<div class="people">
+					<div class="all peeps">
+						
+					</div>
+					<div class="all suspicious">
+						
+					</div>
+					<div class="all confirmed_addicts">
+						
+					</div>
+				</div>
+			<hr>
 		</div>
 	</div>
 
@@ -69,7 +89,7 @@
 
 	<script type="text/javascript">
 
-	particlesJS.load('particles', '/javascripts/particlesjs-config.json', function() {
+		particlesJS.load('particles', '/javascripts/particlesjs-config.json', function() {
 			console.log('callback - particles.js config loaded');
 		});
 
@@ -118,9 +138,48 @@
 			
 
 		});
+		var people = {};
+		$('.sub_but2').on("click", function(){
+			console.log('clicked');
+			firebase.database().ref('/suspicious/').once('value').then(function(snapshot){
+				people['suspicious'] = snapshot.val();
+				$('.suspicious').append("<h3>Suspicious Addicts</h3>");
+				Object.keys(snapshot.val()).forEach(function(e){
+					console.log(e);
+					
+					$('.suspicious').append("<p>"+e+"</p>");
+				});
+			});
+
+			firebase.database().ref('/criminals/').once('value').then(function(snapshot){
+				people['active_addicts'] = snapshot.val();
+				$('.confirmed_addicts').append("<h3>Confirmed Addicts</h3>");
+				Object.keys(snapshot.val()).forEach(function(e){
+					console.log(e);
+					
+					$('.confirmed_addicts').append("<p>"+e+"</p>");
+				});
+			});
+
+			firebase.database().ref('/users/').once('value').then(function(snapshot){
+				people['users'] = snapshot.val();
+				$('.peeps').append("<h3>All Users</h3>");
+				Object.keys(snapshot.val()).forEach(function(e){
+					console.log(e);
+					
+		
+					$('.peeps').append("<p>"+e+"</p>");
+				});
+			});
+
+
+
+
+
+		});
 	</script>
 
 
-	
+
 </body>
 </html>
