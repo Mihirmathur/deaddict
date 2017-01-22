@@ -97,6 +97,8 @@ input {
 .solution{
 	color: #5832A6;
 	padding-bottom: 1em;
+	    padding-left: 2em;
+    padding-right: 2em;
 }
 
 #gradient {
@@ -118,7 +120,7 @@ input {
 }
 
 .form-element{
-	padding: 1em 0em 0em 0em;
+	padding: 1em 0em 2em 0em;
 }
 
 .ico_contain {
@@ -133,7 +135,7 @@ input {
     top: 1.5em;
     height: 5em;
     width: 5em;
-    padding: 0 2em 0em 2em;
+    padding: 0 1em 0em 1em;
     opacity: .7;
 }
 
@@ -162,5 +164,8 @@ input {
 @media(min-width: 768px) {
     .contain {
         flex-direction: row;
+    }
+    .icon{
+    	padding: 0 2em 0em 2em;
     }
 }
