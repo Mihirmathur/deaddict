@@ -14,6 +14,7 @@
 	src="https://code.jquery.com/jquery-3.1.1.min.js"
 	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 	crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
 </head>
 <body>
 	<style type="text/css">
@@ -33,7 +34,7 @@
 	</div>
 	<div class="container" id="gradient">
 		
-		<div class="deaddict animated fadeInDown"><b>deaddict.me</b></div>
+		<div class="deaddict animated fadeInDown"><b>de-addict.me</b></div>
 		<div class="prompts">
 			<img class="icon animated fadeInLeft" src="/images/alcoholism.svg">
 			<img class="icon animated fadeInUp" src="/images/smoking.svg">
@@ -41,14 +42,42 @@
 		</div>
 	</div>
 
-	<div class="form container">
-			<input id="name" name="person" type="text" placeholder="Name">
-			<input id="email" name="email" type="text" placeholder="Email">
-			<input id="pw" name="password" type="password" placeholder="Password">
-			<input id="cn" name="Customer Number" type="password" placeholder="CapitalOne ID">
-			<button class="sub_but">Deaddict Me</button>
+	<div class="form">
+	<br>
+		<h3>We understand you, we care for you.</h3>
+		<!-- <p>And that's why we're bringing the best solution to de-addict</p> -->
+		<div class="contain">
+			<div class="ico_contain">
+				<div class="vivsvg"id="vivsvg"></div>
+				<span>Streak Rewards</span>
+			</div>
+
+			<div class="ico_contain">
+				<div class="vivsvg" id="vivsvg1"></div>
+				<span>Health Tracking</span>
+			</div>
+
+			<div class="ico_contain">
+				<div class="vivsvg" id="vivsvg2"></div>
+				<span>Daily Tips</span>
+			</div>
+		</div>
+		<h5 class="solution">And we're bringing the best de-addiction solution to you...</h5>
+		<hr>
+		<div class="form-element">
+		<input id="name" name="person" type="text" placeholder="Name">
+		<input id="email" name="email" type="text" placeholder="Email">
+		<input id="pw" name="password" type="password" placeholder="Password">
+		<input id="cn" name="Customer Number" type="password" placeholder="CapitalOne ID">
+		<button class="sub_but">Deaddict Me</button>
+		</div>
 	</div>
 
+	<script>
+		new Vivus('vivsvg', {duration: 600, file: "/images/money.svg"});
+		new Vivus('vivsvg1', {duration: 600, file: "/images/health.svg"});
+		new Vivus('vivsvg2', {duration: 600, file: "/images/tips.svg"});
+	</script>
 
 	<script type="text/javascript">
 		$('.sub_but').on("click", function(){
@@ -68,7 +97,6 @@
 				}
 			});
 			$('.form').append("<br><span>Congrats! You've signed up to deaddict.</span>");
-
 
 		});
 	</script>
