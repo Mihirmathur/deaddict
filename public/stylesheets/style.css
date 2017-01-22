@@ -27,6 +27,12 @@ span {
     z-index: 1000;
 }
 
+#particles{
+	position: absolute;
+	width: 100%;
+	height: auto;
+}
+
 .container {
     display: flex;
     text-align: center;
@@ -106,8 +112,8 @@ input {
 
 .logo {
     padding-top: 1em;
-    height: 5em;
-    width: 5em;
+    height: 4.5em;
+    width: 4.5em;
     z-index: 5;
 }
 

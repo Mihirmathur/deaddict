@@ -17,6 +17,7 @@
 	<script src="https://cdn.jsdelivr.net/vivus/latest/vivus.min.js"></script>
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 	<script src="https://www.gstatic.com/firebasejs/3.6.2/firebase.js"></script>
+	<script src="/javascripts/particles.min.js"></script>
 </head>
 <body>
 	<style type="text/css">
@@ -63,6 +64,10 @@
 
 	<script type="text/javascript">
 
+	particlesJS.load('gradient', '/javascripts/particlesjs-config.json', function() {
+			console.log('callback - particles.js config loaded');
+		});
+
 		var config = {
 			apiKey: "AIzaSyC6GK4lbZeM-MmtdGsLF3m5GLCWsTmOtBA",
 			authDomain: "deaddict-8321f.firebaseapp.com",
@@ -77,7 +82,7 @@
 
 		$('.sub_but').on("click", function(){
 			// var NM = $('#capone_id').val();
-			// var api_url = "http://api.reimaginebanking.com/accounts/"+NM+"/withdrawals?key=0328041e3591473db2c6d492ba8aff2b";
+			var api_url = "http://api.reimaginebanking.com/accounts/"+NM+"/withdrawals?key=0328041e3591473db2c6d492ba8aff2b";
 			// if(NM=='')return;
 
 			// $.get(api_url, function(data){
@@ -86,8 +91,10 @@
 			
 			var name = $('#capone_id').val();
 			var heartrate=[];
+			var customer_num;
 			firebase.database().ref('/users/' + name).once('value').then(function(snapshot) {
 				heartrate = snapshot.val().heartrate;
+				customer_num = snapshot.val().customer_num;
 				console.log(heartrate);
 
 				var dataset=[{
