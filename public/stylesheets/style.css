@@ -30,7 +30,8 @@ span {
 #particles{
 	position: absolute;
 	width: 100%;
-	height: auto;
+	height: 50%;
+	z-index: 0;
 }
 
 .container {
@@ -59,6 +60,8 @@ span {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    z-index: 10001;
+    pointer-events: auto;
 }
 
 input {

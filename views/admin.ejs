@@ -35,9 +35,14 @@
 	<div class="nav">
 		<div class="logo-contain"><img class="logo" src="/images/logo.png"></div>
 	</div>
+
+	<div id="particles">
+		
+	</div>
+
 	<div class="container" id="gradient">
 		
-		<div class="deaddict animated fadeInDown"><b>de-addict.me | admin portal</b></div>
+		<div class="deaddict animated fadeInDown"><b>de-addict.me</b> <br> admin portal</div>
 		
 	</div>
 
@@ -46,7 +51,7 @@
 		<h3>Search for a customer</h3>
 		<br>
 
-		<input id="capone_id" name="person" type="text" placeholder="CapitalOne Id"><button class="sub_but">Get Details</button>
+		<input id="capone_id" name="person" type="text" placeholder="Name"><button class="sub_but">Get Details</button>
 		<br><br>
 
 		<div id="chart" style="width: 100%"><!-- Plotly chart will be drawn inside this DIV --></div>
@@ -64,7 +69,7 @@
 
 	<script type="text/javascript">
 
-	particlesJS.load('gradient', '/javascripts/particlesjs-config.json', function() {
+	particlesJS.load('particles', '/javascripts/particlesjs-config.json', function() {
 			console.log('callback - particles.js config loaded');
 		});
 
@@ -82,7 +87,7 @@
 
 		$('.sub_but').on("click", function(){
 			// var NM = $('#capone_id').val();
-			var api_url = "http://api.reimaginebanking.com/accounts/"+NM+"/withdrawals?key=0328041e3591473db2c6d492ba8aff2b";
+			//var api_url = "http://api.reimaginebanking.com/accounts/"+NM+"/withdrawals?key=0328041e3591473db2c6d492ba8aff2b";
 			// if(NM=='')return;
 
 			// $.get(api_url, function(data){
