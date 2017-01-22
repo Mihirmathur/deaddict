@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>585605368899-rftgfq514qdo3f7mm6t1krgj9pod65l0.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.585605368899-rftgfq514qdo3f7mm6t1krgj9pod65l0</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDxXXd8pLKO5qSCRef2mB-iRJLtasmRdZU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>585605368899</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>pennapps.deaddict</string>
+	<key>PROJECT_ID</key>
+	<string>deaddict-8321f</string>
+	<key>STORAGE_BUCKET</key>
+	<string>deaddict-8321f.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:585605368899:ios:71a3fc219101795b</string>
+	<key>DATABASE_URL</key>
+	<string>https://deaddict-8321f.firebaseio.com</string>
+</dict>
+</plist>

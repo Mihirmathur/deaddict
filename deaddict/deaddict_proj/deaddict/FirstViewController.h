@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "PNChart.h"
+@import Firebase;
 @interface FirstViewController : UIViewController
 
 @property (nonatomic) PNCircleChart * circleChart;
@@ -15,7 +16,11 @@
 @property (strong, nonatomic) NSNumber *_current;
 @property (weak, nonatomic) IBOutlet UIImageView *tip_of_day;
 
+@property (strong, nonatomic) FIRDatabaseReference *ref;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *tip_detail;
+@property (strong, nonatomic)NSString *user_email;
 
 @end
 

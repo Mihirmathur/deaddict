@@ -20,9 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self._current = @4;
-    [self displayGraph];
-    self.tip_detail.text = [self chooseDescription];
+    __block NSNumber *streak = nil;
+    self.ref = [[FIRDatabase database] reference];
+    dispatch_semaphore_t semaphore =  dispatch_semaphore_create(0);
+    [[_ref child:@"users"] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        NSDictionary *post = snapshot.value[_user_email];
+        NSLog(@"%@", [post objectForKey:@"streak"]);
+        streak = [post objectForKey:@"streak"];
+        NSLog(@"%@", streak);
+        self._current = streak;
+        //self._current = @4;
+        [self displayGraph];
+        self.tip_detail.text = [self chooseDescription];
+    }];
     
 }
 
@@ -56,6 +66,7 @@
 }
 
 -(void) displayGraph{
+    
     self.circleChart = [[PNCircleChart alloc] initWithFrame:CGRectMake(0,170.0, SCREEN_WIDTH, 150.0)
                                                       total:@7
                                                     current:self._current

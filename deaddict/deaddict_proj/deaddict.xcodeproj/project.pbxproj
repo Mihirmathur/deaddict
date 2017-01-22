@@ -16,13 +16,14 @@
 		982560C61E3333280005C0E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982560C41E3333280005C0E4 /* LaunchScreen.storyboard */; };
 		982560D11E33F7C10005C0E4 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 982560D31E33F7C10005C0E4 /* bg.png */; };
 		982560D51E34061B0005C0E4 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 982560D41E34061B0005C0E4 /* logo.png */; };
-		F3B87913ADBDB9FA740B10B5 /* libPods-deaddict.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D863BF2599724FFAD7EF3AB /* libPods-deaddict.a */; };
+		982560DA1E3446C20005C0E4 /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = 982560D91E3446C20005C0E4 /* Login.m */; };
+		982560DC1E3450150005C0E4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 982560DB1E3450150005C0E4 /* GoogleService-Info.plist */; };
+		D1C650331F5FC0C26CAEC6D7 /* Pods_deaddict.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4C596F44F509C9A9B8C7C12 /* Pods_deaddict.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		231A3B310627EDE64AB8128D /* Pods-deaddict.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deaddict.release.xcconfig"; path = "Pods/Target Support Files/Pods-deaddict/Pods-deaddict.release.xcconfig"; sourceTree = "<group>"; };
 		47CDBB405171939034228327 /* Pods-deaddict.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-deaddict.debug.xcconfig"; path = "Pods/Target Support Files/Pods-deaddict/Pods-deaddict.debug.xcconfig"; sourceTree = "<group>"; };
-		5D863BF2599724FFAD7EF3AB /* libPods-deaddict.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-deaddict.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		982560B01E3333280005C0E4 /* deaddict.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = deaddict.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		982560B41E3333280005C0E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		982560B61E3333280005C0E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -37,6 +38,10 @@
 		982560C71E3333280005C0E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		982560D21E33F7C10005C0E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = Base.lproj/bg.png; sourceTree = "<group>"; };
 		982560D41E34061B0005C0E4 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		982560D81E3446C20005C0E4 /* Login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
+		982560D91E3446C20005C0E4 /* Login.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
+		982560DB1E3450150005C0E4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F4C596F44F509C9A9B8C7C12 /* Pods_deaddict.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_deaddict.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3B87913ADBDB9FA740B10B5 /* libPods-deaddict.a in Frameworks */,
+				D1C650331F5FC0C26CAEC6D7 /* Pods_deaddict.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,7 +59,7 @@
 		761DBC726EA5AD5309455FAB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5D863BF2599724FFAD7EF3AB /* libPods-deaddict.a */,
+				F4C596F44F509C9A9B8C7C12 /* Pods_deaddict.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -82,6 +87,8 @@
 			children = (
 				982560B61E3333280005C0E4 /* AppDelegate.h */,
 				982560B71E3333280005C0E4 /* AppDelegate.m */,
+				982560D81E3446C20005C0E4 /* Login.h */,
+				982560D91E3446C20005C0E4 /* Login.m */,
 				982560B91E3333280005C0E4 /* FirstViewController.h */,
 				982560BA1E3333280005C0E4 /* FirstViewController.m */,
 				982560BC1E3333280005C0E4 /* SecondViewController.h */,
@@ -91,6 +98,7 @@
 				982560D31E33F7C10005C0E4 /* bg.png */,
 				982560C41E3333280005C0E4 /* LaunchScreen.storyboard */,
 				982560D41E34061B0005C0E4 /* logo.png */,
+				982560DB1E3450150005C0E4 /* GoogleService-Info.plist */,
 				982560C71E3333280005C0E4 /* Info.plist */,
 				982560B31E3333280005C0E4 /* Supporting Files */,
 			);
@@ -181,6 +189,7 @@
 				982560C31E3333280005C0E4 /* Assets.xcassets in Resources */,
 				982560D11E33F7C10005C0E4 /* bg.png in Resources */,
 				982560C11E3333280005C0E4 /* Main.storyboard in Resources */,
+				982560DC1E3450150005C0E4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +248,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				982560DA1E3446C20005C0E4 /* Login.m in Sources */,
 				982560BE1E3333280005C0E4 /* SecondViewController.m in Sources */,
 				982560B81E3333280005C0E4 /* AppDelegate.m in Sources */,
 				982560BB1E3333280005C0E4 /* FirstViewController.m in Sources */,
